@@ -1,0 +1,11 @@
+此文件与爬虫脚本无关!
+
+导入自定义模块举例：
+globle_path = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.getcwd()))))
+tag_path = "appium_client/device/"
+sys.path.append(os.path.join(globle_path, tag_path))
+from adb import ADB
+
+脚本抓取自己fork的开源项目，再自动删除fock，保存项目名称和url到readme中
+
+
